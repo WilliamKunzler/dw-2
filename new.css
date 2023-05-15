@@ -1,0 +1,47 @@
+body, #one{
+    background-color: antiquewhite;
+    background-size: 100%;
+    height: 100vh;
+    margin: 0;
+
+}
+#divone {
+    position: relative;
+    background-image: url("https://blog.indimagem.com.br/wp-content/uploads/2018/05/5-dicas-para-fotografia-de-paisagem.jpeg");
+    background-size: 100% 100%;
+    width: 40%; height: 70%;
+    margin-left: auto; margin-right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid black;
+}
+
+p {
+    text-align: center;
+    font-size: 31px;
+}
+input , button{
+    margin-left: 50%;
+    margin-top: 30px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 4vh;
+    text-align: center;
+}
+#nom {
+    margin-top: 80px;
+}
+
+#enviar {
+    background-color: rgb(96, 88, 202);
+    color: white;
+    align-items: center;
+    width: 30%;
+}
+
+
+#dois {
+    display:none;
+}
