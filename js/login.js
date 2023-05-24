@@ -14,6 +14,9 @@ function modal(option) {
 }
 
 function enviar(){
+    
+    localStorage.clear()
+
     let dados = {
         "nome" : document.querySelector("#nome").value,
         "matricula" : document.querySelector("#mat").value,
@@ -27,6 +30,7 @@ function enviar(){
             modal('open');
             return;
         }
+
 
         localStorage[a] = dados[a];
     }
