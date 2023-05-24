@@ -1,23 +1,12 @@
-function reserva(){
-    var nome = document.querySelector("#nom").value
-    var mat = document.querySelector("#mat").value
-    var email = document.querySelector("#email").value
-    var area = document.querySelector("#area").value
-    var carg = document.querySelector("#carg").value
-
-    lista = {
-        "Nome" : nome ,
-        "Matrícula" : mat,
-        "E-mail" : email ,
-        "Area" : area,
-        "Carga Horária" : carg
+function enviar(){
+    let dados = {
+        "Nome" : document.querySelector("#nome").value,
+        "Matrícula" : document.querySelector("#mat").value,
+        "E-mail" : document.querySelector("#email").value,                  //coloca os valores em um dicionário ordenado
+        "Area" : document.querySelector("#area").value,
+        "Carga Horária" : document.querySelector("#carg").value
     }
-
-    var some = document.querySelector("#one")
-    var aparece = document.querySelector("#dois")
-    some.style.display = "none";
-    aparece.style.display = "grid";
-
-    console.log(lista)
+    for (a in dados) {
+        localStorage[a] = dados[a];
+    }
 }
-

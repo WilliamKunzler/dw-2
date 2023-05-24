@@ -1,47 +1,75 @@
 body, #one{
-    background-color: antiquewhite;
-    background-size: 100%;
+    background: rgb(191, 190, 190);
     height: 100vh;
     margin: 0;
-
 }
-#divone {
+.div-one {
     position: relative;
-    background-image: url("https://blog.indimagem.com.br/wp-content/uploads/2018/05/5-dicas-para-fotografia-de-paisagem.jpeg");
-    background-size: 100% 100%;
-    width: 40%; height: 70%;
+    background: white;
+    width: 70%; height: 80%;
     margin-left: auto; margin-right: auto;
     top: 50%;
     transform: translateY(-50%);
-    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
 }
-
-p {
-    text-align: center;
-    font-size: 31px;
-}
-input , button{
-    margin-left: 50%;
-    margin-top: 30px;
-    transform: translateX(-50%);
+.dentro {
+    width: 40%; height: 100%;
+    background: rgb(59, 134, 128);
+    border-radius: 10px 0 0 10px;
     display: flex;
     flex-direction: column;
-    width: 35%;
-    height: 4vh;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
-#nom {
-    margin-top: 80px;
+
+.dentro2 {
+    width: 100%;height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p1, .p1h1 {
+    color: white;
+    width: 60%;
+    font-size: 31px;
+}
+
+.p1h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p2h1 {
+    color:rgb(59, 134, 128) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 31px;
+    margin-left: auto; margin-right: auto; margin-top: 10%;
+}
+.cadastra {
+    font-size: 20px;
+    text-align:center;
+    background-color: rgb(237, 233, 233);
+    width: 40%; height: 8%;
+    border: none;
+    margin-top: 10px;
 }
 
 #enviar {
-    background-color: rgb(96, 88, 202);
+    background-color: rgb(59, 134, 128);
     color: white;
-    align-items: center;
-    width: 30%;
+    border-radius: 30px;
+    margin-top: 30px;
+    width: 20%;
 }
-
 
 #dois {
     display:none;
+    justify-content: center;
+    align-items: center;
+    width: 100%; height: 100%;
 }
+

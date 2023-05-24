@@ -9,35 +9,27 @@
 </head>
 <body>
     <section id="one">
-        <div id="divone">
-            <p>Cadastro de Usuário</p>
-            <input type="text" placeholder="Nome" id="nom">
-            <input type="text" placeholder="Matrícula" id="mat">
-            <input type="text" placeholder="E-mail" id="email">
-            <input type="text" placeholder="Área" id="area">
-            <input type="text" placeholder="Carga Horária" id="carg">
-            <input type="submit" id="enviar" onclick="reserva()">
+
+        <div class="div-one">
+
+            <div class="dentro">
+                <h1 class="p1h1">Bem-vindo a área de Cadastro</h1>
+                <p class="p1"> Cadastre-se agora para relizar suas tarefas!!</p>
+            </div>
+            
+            <div class="dentro2">
+                <h1 class="p2h1">Cadastre-se</h1><br>
+                <input type="text" placeholder="Nome" id="nome" class="cadastra">
+                <input type="text" placeholder="Matrícula" id="mat" class="cadastra">
+                <input type="text" placeholder="E-mail" id="email" class="cadastra">
+                <input type="text" placeholder="Área" id="area" class="cadastra">
+                <input type="text" placeholder="Carga Horária" id="carg" class="cadastra">
+                <input type="submit" id="enviar" onclick="enviar()"  class="cadastra">
+            </div>
+
         </div>
-    </section>
 
-    <section id="dois">
-        <div>
-            <p>Cadastro de tarefas</p>
-        </div>
-    </section>
-    
-
-
-
-
-
-
-
-
-
-
-
-    
+    </section>    
     <script src="new.js"></script>
 </body>
 </html>
