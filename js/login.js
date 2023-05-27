@@ -35,5 +35,5 @@ function enviar(){
         localStorage[a] = dados[a];
     }
 
-    window.location.href = '/index.html';
+    window.location.href = 'index.html';
 }

@@ -15,7 +15,7 @@ body, #one{
 }
 .dentro {
     width: 40%; height: 100%;
-    background: rgb(59, 134, 128);
+    background: #00cba9;
     border-radius: 10px 0 0 10px;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ body, #one{
 }
 
 .p2h1 {
-    color:rgb(59, 134, 128) ;
+    color:#00cba9 ;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 31px;
     margin-left: auto; margin-right: auto; margin-top: 10%;
@@ -59,7 +59,7 @@ body, #one{
 }
 
 #enviar {
-    background-color: rgb(59, 134, 128);
+    background-color: #00cba9;
     color: white;
     border-radius: 30px;
     margin-top: 30px;
@@ -105,7 +105,7 @@ body, #one{
 }
 
 #modal-items button {
-    background-color: rgb(59, 134, 128);
+    background-color: #00cba9;
     color: white;
     font-weight: bold;
     padding: 0.5em 1em;

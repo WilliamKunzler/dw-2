@@ -20,10 +20,10 @@
             <div class="dentro2">
                 <h1 class="p2h1">Cadastre-se</h1><br>
                 <input type="text" placeholder="Nome" id="nome" class="cadastra">
-                <input type="text" placeholder="Matrícula" id="mat" class="cadastra">
+                <input type="number" placeholder="Matrícula" id="mat" class="cadastra">
                 <input type="text" placeholder="E-mail" id="email" class="cadastra">
                 <input type="text" placeholder="Área" id="area" class="cadastra">
-                <input type="text" placeholder="Carga Horária" id="carg" class="cadastra">
+                <input type="number" placeholder="Carga Horária" id="carg" class="cadastra">
                 <input type="submit" id="enviar" onclick="enviar()"  class="cadastra">
             </div>
 
@@ -32,7 +32,7 @@
     <div id="modal-container">
         <div id="modal">
             <div id="modal-items">
-                <p>Parece que algum dado foi não foi inserido. Preencha todos os campos.</p>
+                <p>Parece que algum dado não foi inserido. Preencha todos os campos.</p>
                 <button onclick="modal('close')">Ok</button>
             </div>
         </div>
