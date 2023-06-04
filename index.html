@@ -8,40 +8,56 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section>
-        
-        <div id="container-form">
+    
+    <section id="section1">
+        <h1>Cadastro de Tarefas</h1>
 
-            <h1 class="nome-h1"></h1>
-            <div class="ajust-form">
-                <div class="colun-form">
-                    <input type="text" placeholder="Docente">
-                    <input type="text" placeholder="Atividade">
-                </div>
+        <p id="servidor"></p>
+        <p id="siape"></p>
+        <p id="carga"></p>
 
-                <div class="colun-form">
+        <div id="div1">
+            <input type="text" placeholder="Tarefa" id="tarefa">
 
-
-                    <select name="Dias da semana" >
-                        <option >Selecione um Dia</option>
-                        <option >Segunda-Feira</option>
-                        <option >Terça-Feira</option>
-                        <option >Quarta-Feira</option>
-                        <option >Quinta-Feira</option>
-                        <option >Sexta-Feira</option>
-                    </select>
-
-                </div>
-            </div>
-
-            <p class="carga-p"></p>
-
+            <select name="Dias da semana">
+                <option >Selecione um Dia</option>
+                <option >Segunda-Feira</option>
+                <option >Terça-Feira</option>
+                <option >Quarta-Feira</option>
+                <option >Quinta-Feira</option>
+                <option >Sexta-Feira</option>
+            </select>
         </div>
-
-        <div id="container-ativo"> </div>
-
+        <div id="div2">
+            <p>Horário Inicial</p>
+            <p>Horário Final</p>
+        </div>
+        <div id="div3">
+            <input type="time" id="inicio">
+            <input type="time" id="fim">
+        </div>
+        <div id="div4">
+            <button onclick="Finalizar()">Finalizar</button>
+            <button onclick="submit()">Adicionar +</button>
+        </div>
+            
+        
+        
 
     </section>
+
+    <section id="section2">
+        <p id="aparecer"></p>
+    </section>
+    
+    <div class="modal">
+        <div id="modalitem">
+            <p>Redirecione os campos</p>
+            <button onclick="fecha_modal()">OK</button>
+        </div>
+    </div>
+
+    
 
 
     <script src="js/script.js"></script>
