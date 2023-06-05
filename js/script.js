@@ -9,6 +9,8 @@ function verifica(){
         if (form[a] == "" || form.horafim < form.horainicio)
         {document.querySelector(".modal").style.display = "block"; return}      
 }
+    time()
+    dados()
 }
 
 function submit(){
@@ -19,8 +21,7 @@ function submit(){
         "horafim" : document.querySelector("#fim").value
     }
     verifica()
-    Time()
-    dados()
+    
 }
 
 
@@ -30,7 +31,7 @@ function fecha_modal(){
 
 }
 
-function Time(){
+function time(){
     let x = parseInt(form["horainicio"][0]) * 600 + parseInt(form["horainicio"][1]) * 60 + parseInt(form["horainicio"][3]) * 10 + parseInt(form["horainicio"][4]);
     let y = parseInt(form["horafim"][0]) * 600 + parseInt(form["horafim"][1]) * 60 + parseInt(form["horafim"][3]) * 10 + parseInt(form["horafim"][4]);
     let result1 = Math.floor((y-x) / 60) ; let result2 =  (y - x) % 60;
@@ -56,4 +57,13 @@ function Time(){
 
 }
 
+horainicio = [];
+horafim = [];
+dias = [];
+function dados(){
 
+    horainicio.push(form.horainicio);
+    horafim.push(form.horafim);
+    dias.push(form.dia);
+
+}
